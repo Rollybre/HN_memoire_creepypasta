@@ -12,7 +12,6 @@
 \usepackage{parskip}
 \usepackage{lettrine}
 \usepackage{multirow}
-\usepackage{multirow}
 \usepackage{rotating}
 \usepackage{subcaption}
 \usepackage{booktabs}
@@ -540,42 +539,42 @@ Donc, bien que les mesures lexicales offrent un aperçu intéressant de la riche
 	
 	\section{Emotions}
 	
-	Enfin pour conclure cette tentative de caractérisation générique, nous avons entrepris d'analyser les émotions et sentiments les plus prégnants des différentes productions. Pour ce faire, nous avons utilisé le \emph{NRC Word-Emotion Association Lexcion}\footcite{mohammad_crowdsourcing_2013}, un corpus de couple mot-émotions qui nous permet d'identifier deux éléments: 
-	
-	 \begin{itemize}
-	 	\item La polarité, c'est à dire la proportion de mots auquel on attribue une valence négative ou positive
-	 	\item Les émotions, au nombre de huit : colère, anticipation, dégout, peur, joie,tristesse, surprise, confiance
-	 \end{itemize}
-	 
-	 
-	 \begin{figure}[htbp]
-	 	\centering
-	 	\begin{subfigure}[b]{0.45\textwidth}
-	 		\includegraphics[width=\textwidth]{illustration/emotions.png}
-	 		\caption{Valeurs de la polarité et des sentiments obtenus grâce au \emph{NRC Lex}}
-	 		\label{fig:emotions}
-	 	\end{subfigure}
-	 	\hfill
-	 	\begin{subfigure}[b]{0.45\textwidth}
-	 		\includegraphics[width=\textwidth]{illustration/emotions_corrected.png}
-	 		\caption{valeurs corrigées de la polarité et des sentiments obtenus grâce au \emph{NRC Lex}}
-	 		\label{fig:emotions_corrected}
-	 	\end{subfigure}
-	 	\caption{score d'émotions et de polarité avant et après correction}
-	 	\label{fig:emotions_both}
-	 \end{figure}
-	 
-	 Avant de rentrer dans la description des résultats, il convient de noter un élément important : la présence abondante de valeur aberrantes. Si elles ne sont pas problématique en soi, elles témoignent de l'existence de textes au valeur significativement plus élevés \footnote{plus d'1,5 fois l'écart interquartile}. 
-	 Afin de rendre les résultats plus lisibles, nous avons choisi de supprimer une partie de ces valeurs aberrantes (qui ne modifient donc pas la dispersion des donnée) (cf. \ref{fig:emotions_corrected})
-
-\subsection{La polarité}
-On remarque rapidement que, la polarité attendue, c'est à dire la polarité négative, n'est que très légèrement supérieure à la polarité positive :  la dispersion de la polarité est plus importante (il existe des textes qui sont "plus négatif" que le maximum de positif). 
-Une hypothèse possible quant à cette répartition de la polarité presque égale tient au fonctionnement de ces histoires : les éléments négatifs caractéristiques, qui amènent la peur et le doute, n'apparaissent que relativement tard narrativement parlant. A l'instar des nouvelles fantastiques, comme nous l'avons précédemment mentionné, le caractère horrifique des CP tient à une situation 'normale"  qui se voit perturbée. Comme nous l'avons noté aussi, la perturbation n'est pas des plus brutale, du moins en ce qui concerne le vocabulaire (cf \ref{section_topic}). Ces éléments peuvent expliquer la question de la polarité.
-	
-
-\subsection{Les sentiments}
-Pour ce qui est des sentiments les résultats sont peut être plus attendus. On retrouve deux émotions fortes : la peur naturellement, et l'anticipation.  Pour ce qui est l'anticipation on peut attribuer cette valeur à nouveau au fonctionnement des CP : une fois la perturbation ou l'élément déclencheur atteint, le doute et donc l'attente d'une résolution va venir prendre la place de la joie par exemple.
-La relative faiblesse des scores du dégout de la surprise ou de la colère nous permet d'étayer l'hypothèse selon laquelle les CP se construiraient presque en opposition aux stéréotypes de l'horreur : la surprise et le dégout, associés à un tueur fou assoiffé de sang laisse sa place à l'attente et l'incompréhension.
+%	Enfin pour conclure cette tentative de caractérisation générique, nous avons entrepris d'analyser les émotions et sentiments les plus prégnants des différentes productions. Pour ce faire, nous avons utilisé le \emph{NRC Word-Emotion Association Lexcion}\footcite{mohammad_crowdsourcing_2013}, un corpus de couple mot-émotions qui nous permet d'identifier deux éléments: 
+%	
+%	 \begin{itemize}
+%	 	\item La polarité, c'est à dire la proportion de mots auquel on attribue une valence négative ou positive
+%	 	\item Les émotions, au nombre de huit : colère, anticipation, dégout, peur, joie,tristesse, surprise, confiance
+%	 \end{itemize}
+%	 
+%	 
+%	 \begin{figure}[htbp]
+%	 	\centering
+%	 	\begin{subfigure}[b]{0.45\textwidth}
+%	 		\includegraphics[width=\textwidth]{illustration/emotions.png}
+%	 		\caption{Valeurs de la polarité et des sentiments obtenus grâce au \emph{NRC Lex}}
+%	 		\label{fig:emotions}
+%	 	\end{subfigure}
+%	 	\hfill
+%	 	\begin{subfigure}[b]{0.45\textwidth}
+%	 		\includegraphics[width=\textwidth]{illustration/emotions_corrected.png}
+%	 		\caption{valeurs corrigées de la polarité et des sentiments obtenus grâce au \emph{NRC Lex}}
+%	 		\label{fig:emotions_corrected}
+%	 	\end{subfigure}
+%	 	\caption{score d'émotions et de polarité avant et après correction}
+%	 	\label{fig:emotions_both}
+%	 \end{figure}
+%	 
+%	 Avant de rentrer dans la description des résultats, il convient de noter un élément important : la présence abondante de valeur aberrantes. Si elles ne sont pas problématique en soi, elles témoignent de l'existence de textes au valeur significativement plus élevés \footnote{plus d'1,5 fois l'écart interquartile}. 
+%	 Afin de rendre les résultats plus lisibles, nous avons choisi de supprimer une partie de ces valeurs aberrantes (qui ne modifient donc pas la dispersion des donnée) (cf. \ref{fig:emotions_corrected})
+%
+%\subsection{La polarité}
+%On remarque rapidement que, la polarité attendue, c'est à dire la polarité négative, n'est que très légèrement supérieure à la polarité positive :  la dispersion de la polarité est plus importante (il existe des textes qui sont "plus négatif" que le maximum de positif). 
+%Une hypothèse possible quant à cette répartition de la polarité presque égale tient au fonctionnement de ces histoires : les éléments négatifs caractéristiques, qui amènent la peur et le doute, n'apparaissent que relativement tard narrativement parlant. A l'instar des nouvelles fantastiques, comme nous l'avons précédemment mentionné, le caractère horrifique des CP tient à une situation 'normale"  qui se voit perturbée. Comme nous l'avons noté aussi, la perturbation n'est pas des plus brutale, du moins en ce qui concerne le vocabulaire (cf \ref{section_topic}). Ces éléments peuvent expliquer la question de la polarité.
+%	
+%
+%\subsection{Les sentiments}
+%Pour ce qui est des sentiments les résultats sont peut être plus attendus. On retrouve deux émotions fortes : la peur naturellement, et l'anticipation.  Pour ce qui est l'anticipation on peut attribuer cette valeur à nouveau au fonctionnement des CP : une fois la perturbation ou l'élément déclencheur atteint, le doute et donc l'attente d'une résolution va venir prendre la place de la joie par exemple.
+%La relative faiblesse des scores du dégout de la surprise ou de la colère nous permet d'étayer l'hypothèse selon laquelle les CP se construiraient presque en opposition aux stéréotypes de l'horreur : la surprise et le dégout, associés à un tueur fou assoiffé de sang laisse sa place à l'attente et l'incompréhension.
 
 
 \section{Conclusion}
