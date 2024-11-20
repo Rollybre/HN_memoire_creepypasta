@@ -11,6 +11,7 @@ def recup_info(url):
         soup = BeautifulSoup(response.content, 'html.parser')
         text_tag = soup.find("textarea", class_="mw-editfont-default")
         text = text_tag.text if text_tag else 'No Text Found'
+
         tags = re.findall(r"\[\[Category.*\]\]", text)
         author = re.findall(r"\{\{User.*\}\}", text)
         return {
