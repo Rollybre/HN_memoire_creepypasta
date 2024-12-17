@@ -1,5 +1,7 @@
-sauvegarde_pkl/
-17.02_CSV.CSV/
+17.01_Python/sauvegarde_pkl/
+17.02_CSV.CSV/cp_fandom
+17.02_CSV.CSV/fondation_scp
+17.02_CSV.CSV/reddit_nosleep
 17.09_R/.RData
 */.DS_Store
 17.06_redaction/Lionnet_Creepypastas.toc
@@ -13,6 +15,6 @@ sauvegarde_pkl/
 17.06_redaction/Lionnet_Creepypastas.bbl
 17.01_Python/script/client-secret.json
 17.04_txt/
-17.02_CSV.CSV/
+.env
 
 
