@@ -4,9 +4,13 @@ import google_auth_oauthlib.flow
 import googleapiclient.discovery
 import googleapiclient.errors
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
-API_KEY= 'AIzaSyDckNaLzMik92n5eVnYFmjwKqCL8HBSxEc '
+API_KEY= os.getenv('GOOGLE_API_KEY')
+
 id_se='02bcb702ebe6f46d7'
 scopes = ["https://www.googleapis.com/auth/youtube.force-ssl"]
 
