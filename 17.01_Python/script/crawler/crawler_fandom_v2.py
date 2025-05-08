@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import csv
 
-service = Service("17.03_Driver/geckodriver")  # Change to your actual path to the geckodriver
+service = Service("/Users/rolly/Downloads/geckodriver", )  # Change to your actual path to the geckodriver
 driver = webdriver.Firefox(service=service)
 wait = WebDriverWait(driver, 10)
 
