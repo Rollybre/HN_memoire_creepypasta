@@ -8,3 +8,4 @@
 *.RData filter=lfs diff=lfs merge=lfs -text
 =======
 >>>>>>> b47bd856959fd9de50e49b38d6dadffbb70aa2fa
+*.zip filter=lfs diff=lfs merge=lfs -text
