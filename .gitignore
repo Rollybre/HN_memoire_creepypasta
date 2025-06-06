@@ -1,3 +1,4 @@
 .DS_Store
+*/.DS_Store
 .env
 code/Modélisation_et_regression/wright_ficher.ipynb
